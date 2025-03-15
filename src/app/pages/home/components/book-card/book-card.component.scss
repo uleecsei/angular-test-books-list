@@ -1,0 +1,69 @@
+.book-card {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 310px;
+  text-align: center;
+
+  .mat-mdc-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .book-image-container {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .book-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .book-info {
+    margin-top: 10px;
+  }
+
+  .card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  mat-card-title,
+  mat-card-subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  button {
+    margin-right: 10px;
+  }
+
+  button.mat-icon-button {
+    min-width: 0;
+    padding: 8px;
+  }
+
+  .mat-card-content {
+    overflow: hidden;
+    max-height: 200px;
+  }
+}
